@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frontend Mentor | [Blogr]</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="container">
+          <a class="navbar__brand" href="#">
+            <img src="./assets/images/logo.svg" alt="" />
+          </a>
+          <button class="navbar__toggler" type="button" aria-controls="navbarContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar__toggler-icon"></span>
+          </button>
+          <div id="navbarContent">
+            <ul class="navbar__menu menu">
+              <li class="menu__item dropdown">
+                <a class="menu__link dropdown__toggle" href="#">Product</a>
+                <ul>
+                  <li><a class="dropdown__item" href="#">Overview</a></li>
+                  <li><a class="dropdown__item" href="#">Pricing</a></li>
+                  <li><a class="dropdown__item" href="#">Marketplace</a></li>
+                  <li><a class="dropdown__item" href="#">Features</a></li>
+                  <li><a class="dropdown__item" href="#">Integrations</a></li>
+                </ul>
+              </li>
+              <li class="menu__item dropdown">
+                <a class="menu__link dropdown__toggle" href="#">Company</a>
+                <ul>
+                  <li><a class="dropdown__item" href="#">About</a></li>
+                  <li><a class="dropdown__item" href="#">Team</a></li>
+                  <li><a class="dropdown__item" href="#">Blog</a></li>
+                  <li><a class="dropdown__item" href="#">Careers</a></li>
+                </ul>
+              </li>
+              <li class="menu__item dropdown">
+                <a class="menu__link dropdown__toggle" href="#">Connect</a>
+                <ul>
+                  <li><a class="dropdown__item" href="#">Contact</a></li>
+                  <li><a class="dropdown__item" href="#">Newsletter</a></li>
+                  <li><a class="dropdown__item" href="#">LinkedIn</a></li>
+                </ul>
+              </li>
+              <li class="menu__item"><a class="menu__link" href="#">Login</a></li>
+              <li class="menu__item"><a class="btn btn__primary" href="#">Sign Up</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <section class="cta text-center">
+        <div class="container">
+          <h1>A modern publishing platform</h1>
+          <p>Grow your audience and build your online brand</p>
+          <a class="btn btn__primary" href="#">Start for Free</a>
+          <a class="btn btn__secondary" href="#">Learn More</a>
+        </div>
+      </section>
+    </header>
+    <main class="content" id="main">
+      <div class="container">
+        <section class="intro">
+          <h2 class="text-center">Designed for the future</h2>
+          <div class="intro__picture-mobile">
+            <img src="./assets/images/illustration-editor-mobile.svg" alt="" />
+          </div>
+          <div class="split">
+            <div>
+              <h3>Introducing an extensible editor</h3>
+              <p>
+                Blogr features an exceedingly intuitive interface which lets you
+                focus on one thing: creating content. The editor supports
+                management of multiple blogs and allows easy manipulation of
+                embeds such as images, videos, and Markdown. Extensibility with
+                plugins and themes provide easy ways to add functionality or
+                change the looks of a blog.
+              </p>
+              <h3>Robust content management</h3>
+              <p>
+                Flexible content management enables users to easily move through
+                posts. Increase the usability of your blog by adding customized
+                categories, sections, format, or flow. With this functionality,
+                you’re in full control.
+              </p>
+            </div>
+            <div class="intro__picture-desktop">
+              <img src="./assets/images/illustration-editor-desktop.svg" alt="" />
+            </div>
+          </div>
+        </section>
+        <section class="infra">
+          <div class="split infra__container">
+            <div class="infra__picture">
+              <img src="./assets/images/illustration-phones.svg" alt="" />
+            </div>
+            <div>
+              <h3>State of the Art Infrastructure</h3>
+              <p>
+                With reliability and speed in mind, worldwide data centers
+                provide the backbone for ultra-fast connectivity. This ensures
+                your site will load instantly, no matter where your readers are,
+                keeping your site competitive.
+              </p>
+            </div>
+          </div>
+        </section>
+        <section class="tooling">
+          <div class="split">
+            <div>
+              <img class="tooling__picture-mobile" src="./assets/images/illustration-laptop-mobile.svg" alt="" />
+              <img class="tooling__picture-desktop" src="./assets/images/illustration-laptop-desktop.svg" alt="" />
+            </div>
+            <div>
+              <h3>Free, open, simple</h3>
+              <p>
+                Blogr is a free and open source application backed by a large
+                community of helpful developers. It supports features such as
+                code syntax highlighting, RSS feeds, social media integration,
+                third-party commenting tools, and works seamlessly with Google
+                Analytics. The architecture is clean and is relatively easy to
+                learn.
+              </p>
+              <h3>Powerful tooling</h3>
+              <p>
+                Batteries included. We built a simple and straightforward CLI
+                tool that makes customization and deployment a breeze, but
+                capable of producing even the most complicated sites.
+              </p>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer>
+      <div class="container">
+        <div>
+          <img src="./assets/images/logo.svg" alt="" />
+        </div>
+        <section>
+          <h1>Product</h1>
+          <ul>
+            <li><a href="#">Overview</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Marketplace</a></li>
+            <li><a href="#">Features</a></li>
+            <li><a href="#">Integrations</a></li>
+          </ul>
+        </section>
+        <section>
+          <h1>Company</h1>
+          <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Team</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Careers</a></li>
+          </ul>
+        </section>
+        <section>
+          <h1>Connect</h1>
+          <ul>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Newsletter</a></li>
+            <li><a href="#">LinkedIn</a></li>
+          </ul>
+        </section>
+      </div>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a
+          href="https://www.richardcyrus.com">Richard Cyrus</a>.
+      </div>
+    </footer>
+    <script src="./assets/js/menu.js"></script>
+  </body>
+</html>
