@@ -108,7 +108,6 @@ select {
 
 /*#region Attribution*/
 .attribution {
-  border-top: 1px dotted var(--color-neutral-gray-100);
   color: var(--color-neutral-gray-100);
   font-size: 0.6875rem;
   margin: 4.69rem 0 0.5rem 0;
@@ -120,6 +119,8 @@ select {
 .attribution a {
   color: var(--color-neutral-white);
   font-size: 0.6875rem !important;
+  opacity: 1;
+  text-decoration: underline;
 }
 /*#endregion*/
 
@@ -244,6 +245,7 @@ footer ul {
 
 footer a {
   font-weight: var(--font-weight-regular);
+  opacity: 0.75;
   text-decoration: none;
 }
 
