@@ -27,7 +27,7 @@
             <ul class="navbar__menu menu">
               <li class="menu__item dropdown">
                 <a class="menu__link dropdown__toggle" href="#">Product</a>
-                <ul>
+                <ul class="dropdown__menu">
                   <li><a class="dropdown__item" href="#">Overview</a></li>
                   <li><a class="dropdown__item" href="#">Pricing</a></li>
                   <li><a class="dropdown__item" href="#">Marketplace</a></li>
@@ -37,7 +37,7 @@
               </li>
               <li class="menu__item dropdown">
                 <a class="menu__link dropdown__toggle" href="#">Company</a>
-                <ul>
+                <ul class="dropdown__menu">
                   <li><a class="dropdown__item" href="#">About</a></li>
                   <li><a class="dropdown__item" href="#">Team</a></li>
                   <li><a class="dropdown__item" href="#">Blog</a></li>
@@ -46,7 +46,7 @@
               </li>
               <li class="menu__item dropdown">
                 <a class="menu__link dropdown__toggle" href="#">Connect</a>
-                <ul>
+                <ul class="dropdown__menu">
                   <li><a class="dropdown__item" href="#">Contact</a></li>
                   <li><a class="dropdown__item" href="#">Newsletter</a></li>
                   <li><a class="dropdown__item" href="#">LinkedIn</a></li>
@@ -60,21 +60,23 @@
       </nav>
       <section class="cta text-center">
         <div class="container">
-          <h1>A modern publishing platform</h1>
-          <p>Grow your audience and build your online brand</p>
-          <a class="btn btn__primary" href="#">Start for Free</a>
-          <a class="btn btn__secondary" href="#">Learn More</a>
+          <h1 class="cta__headline">A modern publishing platform</h1>
+          <p class="cta__lead">Grow your audience and build your online brand</p>
+          <div class="cta__actions">
+            <a class="btn btn__primary" href="#">Start for Free</a>
+            <a class="btn btn__secondary" href="#">Learn More</a>
+          </div>
         </div>
       </section>
     </header>
     <main class="content" id="main">
-      <div class="container">
-        <section class="intro">
-          <h2 class="text-center">Designed for the future</h2>
+      <section class="intro">
+          <h2 class="intro__headline text-center">Designed for the future</h2>
           <div class="intro__picture-mobile">
             <img src="./assets/images/illustration-editor-mobile.svg" alt="" />
           </div>
-          <div class="split">
+          <div class="container">
+            <div class="split">
             <div>
               <h3>Introducing an extensible editor</h3>
               <p>
@@ -97,15 +99,17 @@
               <img src="./assets/images/illustration-editor-desktop.svg" alt="" />
             </div>
           </div>
-        </section>
-        <section class="infra">
-          <div class="split infra__container">
+        </div>
+      </section>
+      <section class="infra">
+        <div class="container">
+          <div class="split">
             <div class="infra__picture">
               <img src="./assets/images/illustration-phones.svg" alt="" />
             </div>
-            <div>
-              <h3>State of the Art Infrastructure</h3>
-              <p>
+            <div class="infra__content">
+              <h3 class="infra__headline">State of the Art Infrastructure</h3>
+              <p class="infra__description">
                 With reliability and speed in mind, worldwide data centers
                 provide the backbone for ultra-fast connectivity. This ensures
                 your site will load instantly, no matter where your readers are,
@@ -113,11 +117,15 @@
               </p>
             </div>
           </div>
-        </section>
-        <section class="tooling">
+        </div>
+      </section>
+      <section class="tooling">
+        <div class="tooling__picture-mobile">
+          <img src="./assets/images/illustration-laptop-mobile.svg" alt="" />
+        </div>
+        <div class="container">
           <div class="split">
             <div>
-              <img class="tooling__picture-mobile" src="./assets/images/illustration-laptop-mobile.svg" alt="" />
               <img class="tooling__picture-desktop" src="./assets/images/illustration-laptop-desktop.svg" alt="" />
             </div>
             <div>
@@ -138,12 +146,13 @@
               </p>
             </div>
           </div>
-        </section>
+        </div>
+      </section>
       </div>
     </main>
     <footer>
       <div class="container">
-        <div>
+        <div class="blogr-logo">
           <img src="./assets/images/logo.svg" alt="" />
         </div>
         <section>
