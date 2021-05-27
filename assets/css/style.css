@@ -168,17 +168,21 @@ h3 + p {
   border-radius: 1.75rem;
   font-family: var(--font-family-ubuntu);
   font-weight: var(--font-weight-bold);
-  padding: 1rem 0.94rem;
+  margin: 0 .5rem;
+  min-width: 8.9375rem;
+  padding: 0.6875rem 1rem;
   text-align: center;
 }
 
 .btn__primary,
-.btn__secondary:hover {
+.btn__secondary:hover,
+.btn__secondary:focus {
   background-color: var(--color-neutral-white);
   color: var(--color-primary-red-300);
 }
 
-.btn__primary:hover {
+.btn__primary:hover,
+.btn__primary:focus {
   background-color: var(--color-primary-red-200);
   color: var(--color-neutral-white);
 }
@@ -186,6 +190,11 @@ h3 + p {
 .btn__secondary {
   border: 1px solid var(--color-neutral-white);
   color: var(--color-neutral-white);
+}
+
+.btn__secondary:focus,
+.btn__primary:focus {
+  outline: 0;
 }
 
 a.btn {
@@ -249,8 +258,13 @@ footer a {
   text-decoration: none;
 }
 
-footer a:hover {
+footer a:hover,
+footer a:focus {
   text-decoration: underline;
+}
+
+footer a:focus {
+  outline: 0;
 }
 /*#endregion */
 
@@ -298,7 +312,7 @@ footer a:hover {
 }
 
 .navbar__toggler:focus {
-  outline: 0;
+  outline: var(--color-neutral-white) solid 1px;
   text-decoration: none;
 }
 
@@ -337,10 +351,6 @@ footer a:hover {
 
 .cta__actions {
   margin-top: 3rem;
-}
-
-.cta__actions > .btn__primary {
-  margin-right: 1rem;
 }
 
 .content {
