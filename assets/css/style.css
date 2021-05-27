@@ -138,7 +138,8 @@ body {
   text-align: center;
 }
 
-.container {
+.container,
+.infra__content {
   margin-left: 1.5rem;
   margin-right: 1.5rem;
 }
@@ -368,22 +369,31 @@ footer a:focus {
 }
 
 .infra {
-  background-image: url(../images/bg-pattern-circles.svg),
-    linear-gradient(
-      var(--color-gradient-blue-800),
-      var(--color-gradient-blue-700)
-    );
-  background-position: left -6.5rem top -15rem, center;
-  background-repeat: no-repeat, no-repeat;
-  background-size: 155%, contain;
+  background-image: linear-gradient(
+    var(--color-gradient-blue-800),
+    var(--color-gradient-blue-700)
+  );
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
   border-bottom-left-radius: var(--main-border-radius);
   border-top-right-radius: var(--main-border-radius);
   margin-top: 17.06rem;
-  position: relative;
 }
 
-.infra__content {
-  margin-top: 12.89rem;
+.infra > .split {
+  background-image: url(../images/bg-pattern-circles.svg);
+  background-position: left -6.5rem top -15rem;
+  background-repeat: no-repeat;
+  background-size: 155%;
+  border-top-right-radius: var(--main-border-radius);
+  border-bottom-left-radius: var(--main-border-radius);
+}
+
+@media screen and (min-width: 41.6875em) {
+  .infra > .split {
+    background-position: left -12.5rem top -25rem;
+  }
 }
 
 .infra__description,
@@ -395,7 +405,7 @@ footer a:focus {
   font-size: 2.5rem;
   letter-spacing: -0.07rem;
   line-height: normal;
-  margin-top: 2.92rem;
+  margin: 0;
 }
 
 .infra__description {
@@ -404,11 +414,21 @@ footer a:focus {
   margin-bottom: 6.81rem;
 }
 
-.infra__picture > img {
-  bottom: 0;
+.infra__picture {
+  padding-bottom: 23rem;
+  position: relative;
+}
+
+@media screen and (max-width: 25.6875em) {
+  .infra__picture {
+    padding-bottom: 12.5rem;
+  }
+}
+
+.infra__picture img {
+  top: -12rem;
   left: 0;
   position: absolute;
-  top: -11.5rem;
 }
 
 .tooling__picture-mobile {
