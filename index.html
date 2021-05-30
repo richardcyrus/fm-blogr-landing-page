@@ -24,37 +24,46 @@
             <span class="navbar__toggler-icon"></span>
           </button>
           <div id="navbarContent">
-            <ul class="navbar__menu menu">
-              <li class="menu__item dropdown">
-                <a class="menu__link dropdown__toggle" href="#">Product</a>
-                <ul class="dropdown__menu">
-                  <li><a class="dropdown__item" href="#">Overview</a></li>
-                  <li><a class="dropdown__item" href="#">Pricing</a></li>
-                  <li><a class="dropdown__item" href="#">Marketplace</a></li>
-                  <li><a class="dropdown__item" href="#">Features</a></li>
-                  <li><a class="dropdown__item" href="#">Integrations</a></li>
-                </ul>
-              </li>
-              <li class="menu__item dropdown">
-                <a class="menu__link dropdown__toggle" href="#">Company</a>
-                <ul class="dropdown__menu">
-                  <li><a class="dropdown__item" href="#">About</a></li>
-                  <li><a class="dropdown__item" href="#">Team</a></li>
-                  <li><a class="dropdown__item" href="#">Blog</a></li>
-                  <li><a class="dropdown__item" href="#">Careers</a></li>
-                </ul>
-              </li>
-              <li class="menu__item dropdown">
-                <a class="menu__link dropdown__toggle" href="#">Connect</a>
-                <ul class="dropdown__menu">
-                  <li><a class="dropdown__item" href="#">Contact</a></li>
-                  <li><a class="dropdown__item" href="#">Newsletter</a></li>
-                  <li><a class="dropdown__item" href="#">LinkedIn</a></li>
-                </ul>
-              </li>
-              <li class="menu__item"><a class="menu__link" href="#">Login</a></li>
-              <li class="menu__item"><a class="btn btn__primary" href="#">Sign Up</a></li>
-            </ul>
+            <div class="menu" data-inclusive-menu="">
+              <button class="dropdown__toggle" data-inclusive-menu-opens="product_menu">
+                Product
+                <span aria-hidden="true"></span>
+              </button>
+              <div id="product_menu" class="dropdown__menu" data-inclusive-menu-from="left">
+                <button class="dropdown__item">Overview</button>
+                <button class="dropdown__item">Pricing</button>
+                <button class="dropdown__item">Marketplace</button>
+                <button class="dropdown__item">Features</button>
+                <button class="dropdown__item">Integrations</button>
+              </div>
+            </div>
+            <div class="menu" data-inclusive-menu="">
+              <button class="dropdown__toggle" data-inclusive-menu-opens="company_menu">
+                Company
+                <span aria-hidden="true"></span>
+              </button>
+              <div id="company_menu" class="dropdown__menu" data-inclusive-menu-from="left">
+                <button class="dropdown__item">About</button>
+                <button class="dropdown__item">Team</button>
+                <button class="dropdown__item">Blog</button>
+                <button class="dropdown__item">Careers</button>
+              </div>
+            </div>
+            <div class="menu" data-inclusive-menu="">
+              <button class="dropdown__toggle" data-inclusive-menu-opens="connect_menu">
+                Connect
+                <span aria-hidden="true"></span>
+              </button>
+              <div id="connect_menu" class="dropdown__menu" data-inclusive-menu-from="left">
+                <button class="dropdown__item">Contact</button>
+                <button class="dropdown__item">Newsletter</button>
+                <button class="dropdown__item">LinkedIn</button>
+              </div>
+            </div>
+            <div class="navbar__links">
+              <a class="nav__link login__link" href="#">Login</a>
+              <a class="btn btn__primary" href="#">Sign Up</a>
+            </div>
           </div>
         </div>
       </nav>
@@ -181,5 +190,13 @@
       </div>
     </footer>
     <script src="./assets/js/menu.js"></script>
+    <script>
+      const productMenu = document.querySelector('[data-inclusive-menu-opens="product_menu"]')
+      const productMenuButton = new MenuButton(productMenu)
+      const companyMenu = document.querySelector('[data-inclusive-menu-opens="company_menu"]')
+      const companyMenuButton = new MenuButton(companyMenu)
+      const connectMenu = document.querySelector('[data-inclusive-menu-opens="connect_menu"]')
+      const connectMenuButton = new MenuButton(connectMenu)
+    </script>
   </body>
 </html>

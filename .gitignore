@@ -199,3 +199,6 @@ typings/
 ## Please do not remove line 201 - thanks! 🙂 ##
 ################################################
 *.xd
+assets/css/style.min-min.css
+assets/css/style.min.css
+assets/js/menu-min.js
