@@ -35,6 +35,8 @@ Users should be able to:
 ### Useful resources
 
 - [A Modern CSS Reset](https://piccalil.li/blog/a-modern-css-reset/)
+- [A Complete Guide to Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
+- [A Complete Guide to Grid](https://css-tricks.com/snippets/css/complete-guide-grid/)
 
 ## Author
 
