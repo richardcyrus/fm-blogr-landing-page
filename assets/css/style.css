@@ -207,6 +207,7 @@ a.btn {
 header {
   background-image: url(../images/bg-pattern-intro.svg),
     linear-gradient(
+      135deg,
       var(--color-gradient-red-100),
       var(--color-gradient-red-400)
     );
@@ -453,6 +454,10 @@ footer a:focus {
     line-height: auto;
   }
 
+  header {
+    background-size: 231%, cover;
+  }
+
   .cta__lead {
     font-size: 1.25rem;
   }
@@ -494,6 +499,10 @@ footer a:focus {
   h3 {
     margin-top: 4rem;
     line-height: 1.75rem;
+  }
+
+  header {
+    background-size: 170%, cover;
   }
 
   .content {
@@ -594,6 +603,11 @@ footer a:focus {
 
 /* 1200px (extra large) */
 @media screen and (min-width: 75em) {
+  header {
+    background-size: 195%, cover;
+    background-position: left -23rem bottom -60rem, center;
+  }
+
   .container,
   footer > .container,
   .intro__headline {
@@ -656,6 +670,10 @@ footer a:focus {
   header, main, footer {
     max-width: 90em;
     margin: 0 auto;
+  }
+
+  header {
+    background-size: 180%, cover;
   }
 
   .content {
