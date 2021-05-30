@@ -139,7 +139,7 @@ body {
 }
 
 .container,
-.into__content,
+.intro__content,
 .infra__content,
 .tooling__content {
   margin-left: 1.5rem;
@@ -525,7 +525,7 @@ footer a:focus {
     margin-top: 3rem;
   }
 
-  .into__content {
+  .intro__content {
     grid-column: 1 / 8;
     margin-left: 3.22rem;
   }
@@ -589,5 +589,100 @@ footer a:focus {
     justify-content: space-between;
     margin-left: 3.22rem;
     margin-right: 3.22rem;
+  }
+}
+
+/* 1200px (extra large) */
+@media screen and (min-width: 75em) {
+  .container,
+  footer > .container,
+  .intro__headline {
+    margin-left: 10.44rem;
+    margin-right: 10.44rem;
+  }
+
+  .intro__content {
+    margin-left: 10.44rem;
+  }
+
+  .infra__content,
+  .tooling__content {
+    margin-right: 10.44rem;
+  }
+
+  .intro__picture-desktop {
+    height: 158%;
+    background-position-x: left 10rem;
+  }
+
+  .infra {
+    margin-top: 10rem;
+  }
+
+  .infra > .split {
+    background-size: 75%;
+  }
+
+  .infra__picture img {
+    left: 8rem;
+  }
+
+  .infra__content {
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+  }
+
+  .tooling .split {
+    margin-top: 10rem;
+    margin-bottom: 8rem;
+  }
+
+  .tooling__picture-desktop {
+    background-position-x: left -19rem;
+    height: 138%;
+  }
+
+  .tooling__content {
+    margin-bottom: 4rem;
+  }
+
+  footer {
+    margin-top: 4.25rem;
+  }
+}
+
+/* 1400px (extra extra large) */
+@media screen and (min-width: 87.5em) {
+  header, main, footer {
+    max-width: 90em;
+    margin: 0 auto;
+  }
+
+  .content {
+    margin-top: 9.25rem;
+  }
+
+  .intro__picture-desktop {
+    background-position-x: left 4rem;
+  }
+
+  footer > .container {
+    justify-content: flex-start;
+  }
+
+  .blogr-logo {
+    margin-right: 11.52rem;
+  }
+
+  .blogr-logo img {
+    width: 100%;
+  }
+
+  footer section {
+    margin-right: 13rem;
+  }
+
+  footer section:last-of-type {
+    margin-right: 0;
   }
 }
