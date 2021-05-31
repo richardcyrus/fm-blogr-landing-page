@@ -6,6 +6,10 @@ This is a solution to the [Blogr landing page challenge on Frontend Mentor](http
 
 - [Overview](#overview)
   - [The challenge](#the-challenge)
+  - [Screenshot](#screenshot)
+    - [Reference Images](#reference-images)
+    - [My Design](#my-design)
+  - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
   - [Useful resources](#useful-resources)
@@ -21,6 +25,26 @@ Users should be able to:
 
 - View the optimal layout for the site depending on their device's screen size
 - See hover states for all interactive elements on the page
+
+### Screenshot
+
+#### Reference Images
+- [Mobile](./design/reference/mobile-design.jpg)
+- [Mobile with Menu](./design/reference/mobile-menu.jpg)
+- [Desktop](./design/reference/desktop-design.jpg)
+- [Desktop with Menu](./design/reference/active-states.jpg)
+
+#### My Design
+
+- [Mobile](./design/screenshots/blogr_mobile.jpg)
+- [Mobile with Menu](./design/screenshots/blogr_mobile_menu.jpg)
+- [Desktop](./design/screenshots/blogr_desktop.jpg)
+- [Desktop with Menu](./design/screenshots/blogr_desktop_menu.jpg)
+
+### Links
+
+- [Solution URL](https://github.com/richardcyrus/fm-blogr-landing-page)
+- [Live Site URL](https://www.richardcyrus.com/fm-blogr-landing-page)
 
 ## My process
 
