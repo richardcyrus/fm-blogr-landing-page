@@ -31,6 +31,7 @@ Users should be able to:
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
+- Sass
 
 ### Useful resources
 
@@ -39,6 +40,7 @@ Users should be able to:
 - [A Complete Guide to Grid](https://css-tricks.com/snippets/css/complete-guide-grid/)
 - [Inclusive Components: Menus & Menu Buttons](https://inclusive-components.design/menus-menu-buttons/)
 - [Inclusive Menu Button](https://github.com/Heydon/inclusive-menu-button)
+- [How to convert the hamburger icon of navigation menu to X on click?](https://www.geeksforgeeks.org/how-to-convert-the-hamburger-icon-of-navigation-menu-to-x-on-click/)
 
 ## Author
 

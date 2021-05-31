@@ -23,7 +23,7 @@
             aria-label="Toggle navigation">
             <span class="navbar__toggler-icon"></span>
           </button>
-          <div id="navbarContent">
+          <div id="navbarContent" data-mobile-menu-show="false">
             <div class="menu" data-inclusive-menu="">
               <button class="dropdown__toggle" data-inclusive-menu-opens="product_menu">
                 Product
@@ -191,12 +191,23 @@
     </footer>
     <script src="./assets/js/menu.js"></script>
     <script>
+      // Wire-up inclusive-menus-button for the individual menus.
       const productMenu = document.querySelector('[data-inclusive-menu-opens="product_menu"]')
       const productMenuButton = new MenuButton(productMenu)
       const companyMenu = document.querySelector('[data-inclusive-menu-opens="company_menu"]')
       const companyMenuButton = new MenuButton(companyMenu)
       const connectMenu = document.querySelector('[data-inclusive-menu-opens="connect_menu"]')
       const connectMenuButton = new MenuButton(connectMenu)
+
+      // Add the toggle behavior to the hamburger menu button for mobile.
+      const mobileMenuButton = document.querySelector(".navbar__toggler")
+      mobileMenuButton.addEventListener("click", function(){
+        let expanded = this.getAttribute('aria-expanded') === 'true' || false
+        this.setAttribute('aria-expanded', !expanded);
+
+        const menuContainer = document.querySelector("#navbarContent")
+        menuContainer.setAttribute('data-mobile-menu-show', !expanded)
+      })
     </script>
   </body>
 </html>
