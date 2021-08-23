@@ -43,7 +43,8 @@ Users should be able to:
 
 ### Links
 
-- [Solution URL](https://github.com/richardcyrus/fm-blogr-landing-page)
+- [Solution URL](https://www.frontendmentor.io/solutions/blogr-landing-page-html-scss-js-yK58AT4tZ)
+- [Repository URL](https://github.com/richardcyrus/fm-blogr-landing-page)
 - [Live Site URL](https://www.richardcyrus.com/fm-blogr-landing-page)
 
 ## My process
@@ -70,4 +71,3 @@ Users should be able to:
 
 - Website - [Richard Cyrus](https://www.richardcyrus.com)
 - Frontend Mentor - [@richardcyrus](https://www.frontendmentor.io/profile/richardcyrus)
-- Twitter - [@techmanrc](https://www.twitter.com/techmanrc)
